@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe Frost</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script defer src="scripts.js"></script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-blue-800">
+        <a href="index.html">Cafe Frost</a>
+      </h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="index.html" class="hover:text-blue-600">Home</a>
+        <a href="menu.html" class="hover:text-blue-600">Menu</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden flex flex-col items-center bg-white px-4 pb-4">
+      <a href="index.html" class="block py-2">Home</a>
+      <a href="menu.html" class="block py-2">Menu</a>
+      <a href="about.html" class="block py-2">About</a>
+      <a href="contact.html" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('images/hero.jpg');">
+    <h2 class="text-4xl md:text-6xl text-white bg-black bg-opacity-50 p-4 rounded">Welcome to Cafe Frost</h2>
+  </section>
+
+  <!-- Gallery Slider Section -->
+<section class="pt-16 pb-12 px-6 md:px-16 lg:px-32 bg-gray-50">
+  <h2 class="text-3xl font-bold text-center mb-8">Our Gallery</h2>
+  <div class="swiper-container relative pb-12">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="images/interior.jpg" alt="Interior" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/pancakes.jpg" alt="Pancakes" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/latte.jpg" alt="Coffee" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/frenchtoast.jpg" alt="French Toast" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/bar.jpg" alt="Bar Area" class="w-full h-64 object-cover rounded-lg">
+      </div>
+      <div class="swiper-slide">
+        <img src="images/exterior.jpg" alt="Patio" class="w-full h-64 object-cover rounded-lg">
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <div class="swiper-pagination absolute bottom-0 left-0 w-full text-center"></div>
+    <div class="swiper-button-next text-blue-700"></div>
+    <div class="swiper-button-prev text-blue-700"></div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center py-6 mt-10">
+    <div class="space-x-4 mb-2">
+      <a href="#" class="text-blue-600">Facebook</a>
+      <a href="#" class="text-pink-600">Instagram</a>
+    </div>
+    <p class="text-sm">Open daily from 8 AM – 4 PM</p>
+  </footer>
+</body>
+</html>

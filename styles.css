@@ -1,0 +1,12 @@
+.swiper-container {
+  position: relative; /* ensure relative positioning */
+  padding-bottom: 3rem; /* add space at the bottom for pagination */
+}
+
+.swiper-pagination {
+  bottom: 0 !important; /* force pagination to bottom of slider */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+}
