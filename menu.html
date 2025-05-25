@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Menu - Cafe Frost</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/main.e6c13ad2.css" />
 </head>
 <body class="font-sans text-gray-800">
-  <!-- Header (same as index.html) -->
+  <!-- Header -->
   <header class="bg-white shadow-md fixed w-full z-10">
     <div class="container mx-auto flex items-center justify-between p-4">
       <h1 class="text-2xl font-bold text-blue-800">
@@ -35,75 +36,10 @@
     </div>
   </header>
 
-  <!-- Menu Section -->
-  <main class="pt-32 pb-12 px-6 md:px-16 lg:px-32">
-    <h2 class="text-4xl font-bold text-center mb-10">Our Menu</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Menu Item Card -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/pancakes.jpg" alt="Pancakes" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Blueberry Pancakes</h3>
-          <p class="text-gray-600 mb-2">Fluffy pancakes topped with blueberries and syrup.</p>
-          <span class="text-blue-700 font-bold">$8.99</span>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/avocadotoast.jpg" alt="Avocado Toast" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Avocado Toast</h3>
-          <p class="text-gray-600 mb-2">Sourdough toast topped with smashed avocado and poached egg.</p>
-          <span class="text-blue-700 font-bold">$7.50</span>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/omelette.jpg" alt="Omelette" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Cheese Omelette</h3>
-          <p class="text-gray-600 mb-2">Three-egg omelette with cheddar and herbs.</p>
-          <span class="text-blue-700 font-bold">$6.99</span>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/frenchtoast.jpg" alt="French Toast" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">French Toast</h3>
-          <p class="text-gray-600 mb-2">Cinnamon brioche dipped in vanilla egg wash and grilled.</p>
-          <span class="text-blue-700 font-bold">$9.25</span>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/burrito.jpg" alt="Breakfast Burrito" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Breakfast Burrito</h3>
-          <p class="text-gray-600 mb-2">Eggs, cheese, sausage, and hash browns wrapped in a warm tortilla.</p>
-          <span class="text-blue-700 font-bold">$8.75</span>
-        </div>
-      </div>
-
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-        <img src="images/latte.jpg" alt="Iced Latte" class="w-full h-64 object-cover">
-        <div class="p-4">
-          <h3 class="text-xl font-semibold mb-2">Iced Latte</h3>
-          <p class="text-gray-600 mb-2">Espresso with cold milk and ice.</p>
-          <span class="text-blue-700 font-bold">$4.50</span>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-100 text-center py-6 mt-10">
-    <div class="space-x-4 mb-2">
-      <a href="#" class="text-blue-600">Facebook</a>
-      <a href="#" class="text-pink-600">Instagram</a>
-    </div>
-    <p class="text-sm">Open daily from 8 AM – 4 PM</p>
-  </footer>
+  <!-- Mount Static React Build -->
+  <div id="cart-root"> 
+    <script src="static/js/main.f82cb104.js"></script>
+  </div>
 
   <script src="scripts.js"></script>
 </body>
